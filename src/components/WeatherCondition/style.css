@@ -1,0 +1,14 @@
+.weatherCondition p {
+    font-weight: 600;
+}
+
+.weatherCondition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 9.2rem;
+    height: 9.2rem;
+    background: rgba(128,128,128,.3);
+    border-radius: 50%;
+}
