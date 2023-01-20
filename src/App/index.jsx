@@ -73,17 +73,17 @@ export function App() {
               <div className="currentTime">
                 <div className="blockDegree">
                   <BsThermometerHigh className='iconThermometer' />
-                  <p className='degreeCurrent'>{weatherData.current.temp_c}</p>
+                  <p className='degreeCurrent'>{weatherData.current.temp_c}º</p>
                   <p className='degreeMaxMin'>
-                    <span className="degreeMax">{weatherData.forecast.forecastday[0].day.maxtemp_c}</span>
-                    <span className="degreeMin">{weatherData.forecast.forecastday[0].day.mintemp_c}</span>
+                    <span className="degreeMax">{weatherData.forecast.forecastday[0].day.maxtemp_c}º</span>
+                    <span className="degreeMin">{weatherData.forecast.forecastday[0].day.mintemp_c}º</span>
                   </p>
                 </div>
                 <div className="blockSituation">
                   <img src={weatherData.current.condition.icon} alt="icon" />
                     <div>
                       <p>{weatherData.current.condition.text}</p>
-                      <p>Sensação Terminal {weatherData.current.feelslike_c}</p>
+                      <p>Sensação Terminal {weatherData.current.feelslike_c}º</p>
                     </div>
                 </div>
               </div>
