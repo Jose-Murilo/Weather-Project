@@ -67,7 +67,7 @@ export function App() {
               <article> 
             <section className='blockCityName'>
               <h2>{weatherData.location.name}, {weatherData.location.region}</h2>
-              <p>Brasil, {nowDate}</p>
+              <p>{weatherData.location.country}, {nowDate}</p>
             </section>
             <section className='blockCurrentTime'>
               <div className="currentTime">
