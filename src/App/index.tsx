@@ -10,7 +10,7 @@ export function App() {
   const [searchedCity, setSearchedCity] = useState<string>('jucas')
   const [inputCity, setInputCity] = useState<string>('')
   const [weatherData, setWeatherData] = useState<WeatherDataProps | null>(null)
-  const [dateNow, setDateNow] = useState("")
+  const [dateNow, setDateNow] = useState<string>("")
 
   const API = `https://api.weatherapi.com/v1/forecast.json?key=fb85b303e1fe4286a2b15407223112&q=${searchedCity}&days=4&lang=pt`
 
