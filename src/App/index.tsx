@@ -7,8 +7,8 @@ import './style.css'
 import { WeatherDataProps } from '../@types/WeatherDataProps';
 
 export function App() {
-  const [searchedCity, setSearchedCity] = useState('jucas')
-  const [inputCity, setInputCity] = useState('')
+  const [searchedCity, setSearchedCity] = useState<string>('jucas')
+  const [inputCity, setInputCity] = useState<string>('')
   const [weatherData, setWeatherData] = useState<WeatherDataProps | null>(null)
   const [dateNow, setDateNow] = useState("")
 
