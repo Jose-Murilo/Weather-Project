@@ -1,6 +1,11 @@
 import './style.css'
 
-export function ClimateCard({ climate, condition }) {
+type ClimateCardProps = {
+    climate: string;
+    condition: string;
+}
+
+export function ClimateCard({ climate, condition }: ClimateCardProps) {
     return (
         <div className='weatherCondition'>
             <h4>{condition}</h4>
